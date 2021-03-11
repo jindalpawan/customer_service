@@ -1,12 +1,17 @@
 package com.pawanjindal.first.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 public class Customer {
+    @JsonProperty("id")
     private int customerId;
+    @JsonProperty("firstName")
     private String customerFirstName;
+    @JsonProperty("lastName")
     private String customerLastName;
+    @JsonProperty("email")
     private String customerEmail;
 
     public int getCustomerId() {
