@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class FirstApplication {
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(FirstApplication.class, args);
 	}
 
